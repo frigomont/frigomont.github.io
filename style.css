@@ -10,7 +10,7 @@ body {
 
 @font-face {
 font-family: Rois;
-src: url(/Rois-Medium.ttf);
+src: url(./Rois-Medium.ttf) format(truetype);
 }
 #logo {
     width: 70%;
