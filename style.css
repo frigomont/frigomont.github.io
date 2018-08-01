@@ -10,6 +10,21 @@ body {
 #logo {
     width: 70%;
 }
+#language {
+    position: absolute;
+    top: 3%;
+    left: 92%;
+font-family: rois;
+font-size: 1.2em;
+color: #ffffff;
+}
+#de:hover {
+    color:#ED1C24;
+}
+
+#it:hover {
+    color:#00CCC6;
+}
 #menu {
     font-family: Rois;
     color:  #ffffff;
@@ -54,7 +69,7 @@ body {
 }
 #lthree {
     position: relative;
-    left: 70%;
+    left: 69%;
 }
 #lthree:hover {
     color: #ED1C24;
