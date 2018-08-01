@@ -27,6 +27,7 @@ color: #ffffff;
 }
 #menu {
     font-family: Rois;
+    src: url("./rois-medium.ttf") format(ttf);
     color:  #ffffff;
     vertical-align: sub;
     font-size: 13pt;
