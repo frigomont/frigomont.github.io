@@ -7,6 +7,10 @@ body {
   padding: 0px;
   font-family: Roboto-light;
 }
+@fontface {
+    font-family: Rois;
+    src: url(https://raw.githubusercontent.com/zwickmueller/hfbk/3e0da32118dc3f47ab222e494c58e6980c65254c/_nuxt/_nuxt/fonts/Rois-Medium.3e41d0b.ttf) format("truetype");
+}
 #logo {
     width: 70%;
 }
@@ -27,7 +31,6 @@ color: #ffffff;
 }
 #menu {
     font-family: Rois;
-    src: url("https://raw.githubusercontent.com/zwickmueller/hfbk/3e0da32118dc3f47ab222e494c58e6980c65254c/_nuxt/_nuxt/fonts/Rois-Medium.3e41d0b.ttf");
     color:  #ffffff;
     vertical-align: sub;
     font-size: 13pt;
