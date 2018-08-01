@@ -1,0 +1,78 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto-light;
+}
+#logo {
+    width: 70%;
+}
+#menu {
+    font-family: Rois;
+    color:  #ffffff;
+    vertical-align: sub;
+}
+/* Style the top navigation bar */
+#menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0E2030;
+    height: 7%;
+
+}
+
+/* Style the topnav links */
+#menu li {
+    float: left;
+    display: inline-block;
+    color: #ffffff;
+    padding: 1% 1% 1% 1%;
+    text-decoration: none;
+    top: 13%;
+    text-align: center;
+}
+
+/* Change color on hover */
+#lone {
+    position: relative;
+    left: 5%;
+}
+#lone:hover {
+    color: #4382FF;
+}
+#ltwo {
+    position: relative;
+    left: 10%;
+}
+#ltwo:hover {
+    color: #00CCC6;
+}
+#lthree {
+    position: relative;
+    left: 70%;
+}
+#lthree:hover {
+    color: #ED1C24;
+}
+/* Style the content */
+#content {
+    padding: 0px;
+    margin: 0px;
+    height: 93%;
+    background-color: #193356;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#einleitung {
+    height: 100%;
+}
