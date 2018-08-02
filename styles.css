@@ -4,7 +4,9 @@ body {
 
 @font-face {
 	font-family: "Rois Medium";
-	src: url(fonts/Rois-Medium.3e41d0b.ttf);
+	src: url(fonts/rois-medium.3e41d0b-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 #language, ul {
