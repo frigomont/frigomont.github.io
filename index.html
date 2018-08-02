@@ -11,21 +11,34 @@
 			<div id="logo">
 			<img src="./logo_big.svg">
 				<div id="language">
-					<a href ="#" id="de">DE</a> | <a href ="#" id="it">IT</a>
+					<a href ="#"  class="de">DE</a> | <a href ="#" class="it">IT</a>
 				</div>
 			</div>
 	</section>
 		<div>
-			<ul id="menu">
-				<li id="lone"> <a data-scroll href="#einleitung">Arbeiten</a> </li>
-				<li id="ltwo"> <a href="#">Kontakt</a></li>
-				<li id="lthree"> <a href="#">Über uns</a> </li>
+			<ul id="menu" class="mainnav">
+				<li class="lone"> <a data-scroll href="#einleitung">Arbeiten</a> </li>
+				<li class="ltwo"> <a href="#">Kontakt</a></li>
+				<li class="lthree"> <a href="#">Über uns</a> </li>
+			 	<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars"></i> </a></li>
 			</ul>
 		</div>
 
 	<section id="einleitung">
 	</section>
 <footer>
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("menu");
+	    if (x.className === "mainnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "mainnav";
+	    }
+	}
+	</script>
+
 	<script>
 	var scroll = new SmoothScroll('a[href*="#"]');
 	</script>
