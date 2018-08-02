@@ -1,5 +1,4 @@
 body {
-  font-family: rois, sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -7,6 +6,11 @@ body {
 	font-family: "Rois Medium";
 	src: url(fonts/Rois-Medium.3e41d0b.ttf);
 }
+
+#language, ul {
+	font-family: "Rois Medium", sans-serif;
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -35,7 +39,6 @@ html, body{
     position: absolute;
     top: 3%;
     right: 1%;
-    font-family: rois;
     color: #ffffff;
     display: inline-block;
 }
