@@ -3,6 +3,10 @@ body {
   background-color: #f4f4f4;
 }
 
+@font-face {
+	font-family: "Rois Medium";
+	src: url(fonts/Rois-Medium.3e41d0b.ttf);
+}
 html, body{
     margin: 0;
     padding: 0;
