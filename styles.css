@@ -218,19 +218,23 @@ a:hover {
 }
 
 h1 {
+	font-family: "Rois Medium";
+	letter-spacing: 2px;
 	font-size: 25pt;
 	color: #ffffff;
 	display: inline-block;
-	float: left;
+//	float: left;
+
 }
 
 p {
-	float: left;
+//	float: left;
 	position: relative;
 	font-size: 14pt;
+	line-height: 1.6;
 	color: #ffffff;
-	margin-left: 40px;
-	padding-top: 24px;
+//	margin-left: 40px;
+//	padding-top: 24px;
 }
 
 .f1 {
@@ -239,5 +243,5 @@ p {
 
 #Kontakt {
 	height: 100%;
-	background: #359EAE;
+	background: #001328;
 }
