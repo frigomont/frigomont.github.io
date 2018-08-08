@@ -1,11 +1,21 @@
 body {
 	background-color: #f4f4f4;
-	font-family: "Noto Sans Regular", sans-serif;
+	font-family: "Noto Sans Regular";
+	font-weight: normal;
+	font-style: normal;
+	color: #ffffff;
 }
 
 @font-face {
 	font-family: "Rois Medium";
 	src: url(fonts/rois-medium.3e41d0b-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Noto Sans Regular';
+	src: url(fonts/NotoSans-Regular.woff);
     font-weight: normal;
     font-style: normal;
 }
@@ -215,6 +225,7 @@ a:hover {
 .textblock {
 	padding-left: 13%;
 	padding-top: 10%;
+	width: 500px;
 }
 
 h1 {
@@ -223,25 +234,48 @@ h1 {
 	font-size: 25pt;
 	color: #ffffff;
 	display: inline-block;
-//	float: left;
+/*	float: left;
 
+	-nebeneinander-
+*/
 }
 
 p {
-//	float: left;
+/*	float: left;
+	margin-left: 40px;
+	padding-top: 24px;
+	
+	-nebeneinander-
+*/	
 	position: relative;
 	font-size: 14pt;
 	line-height: 1.6;
 	color: #ffffff;
-//	margin-left: 40px;
-//	padding-top: 24px;
+
 }
 
 .f1 {
-	max-width: 20%;
+	max-width: 410px;
 }
 
 #Kontakt {
 	height: 100%;
 	background: #001328;
+}
+
+#ctypo {
+	font-size: 17pt;
+}
+
+.clink {
+	text-decoration: underline;
+}
+.clink:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+#map {
+/*	width:400px;
+	height:400px; */
 }
