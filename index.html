@@ -5,37 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0;">
   <title>Frigomont - Kühlanlagen</title>
 	<link rel="stylesheet" type="text/css" href="./styles.css">
-	<script type="text/javascript" src="scripts/scripts.js"></script>	
+	<script type="text/javascript" src="./scripts/scripts.js"></script>	
 	
 	<script src="./smooth-scroll.polyfills.min.js"></script>
 	<link rel="shortcut icon" type="image/png" href="favicon2.ico"/>
 	
-		<!-- Core CSS file -->
-		<link rel="stylesheet" href="photoswipe/photoswipe.css"> 
-
-		<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
-			 In the folder of skin CSS file there are also:
-			 - .png and .svg icons sprite, 
-			 - preloader.gif (for browsers that do not support CSS animations) -->
-		<link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
-
-		<!-- Core JS file -->
-		<script src="photoswipe/photoswipe.min.js"></script> 
-
-		<!-- UI JS file -->
-		<script src="photoswipe/photoswipe-ui-default.min.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" rel="stylesheet">
-
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<!-- flexslider -->
+	<link rel="stylesheet" href="fs/flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="fs/jquery.flexslider.js"></script>
+	
 </head>
 <body>
   <section id="welcome">
       <div id="logo">
       <img src="./logo_big.svg" alt="logo">
-        <span id="language">
+      </div>
+	    <span id="language">
           <a href ="#"  class="de">DE</a> | <a href ="#" class="it">IT</a>
         </span>
-      </div>
   </section>
 <header class="header">
   <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -43,92 +33,55 @@
   <ul class="menu">
     <li id="lone"><a data-scroll href="#einleitung">Arbeiten</a></li>
     <li id="ltwo"><a href="#Kontakt">Kontakt</a></li>
-    <li id="righty"><a href="#ueber">Über uns</a></li>
+    <li id="righty"><a href="./ueber.html">Über uns</a></li>
   </ul>
 </header>
 <section id="einleitung">
+	<!--
+	<div id="imxages">
+	 <img class="mySlides" src="img/image1.jpg">
+	<img class="mySlides" src="img/image2.jpg">
+	<img class="mySlides" src="img/image3.jpg">
+	<img class="mySlides" src="img/image4.jpg"> 
+	</div>-->
+	<div id="images"> <img id ="berg" src="img/iceage.svg" alt="ice"> </div>
+	
 	<div class="textblock">
-		<h1 class="u1">Garantierte <br> Qualität</h1>
+		<h1 class="u1">Kältetechnik</h1>
 		<p class="f1">
-		Mit dieser Mail Informieren wir euch das alle anonymen herumliegenden Materialien im Bankraum  bis Freitag den 27 July aufgeräumt werden müssen. Montag den 30 July werden alle Reste von der Putzfirma entsorgt.
+			Ohne Kältetechnik ist modernes Leben undenkbar. Sowohl für den industriellen Bereich als
+			auch für den Lebensmittelgroß- und Einzelhandel gilt: Kältetechnik ist unverzichtbar. Von
+			der Konzeption bis zur Realisierung stehen wir unseren Kunden mit Ideen und Erfahrung zur
+			Seite. 
 		</p>
 	</div>
-<!-- Photoswipe -->	  
-	<!-- Root element of PhotoSwipe. Must have class pswp. -->
-	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-<!-- Photoswipe end -->	
 </section>
+	<section id="slidersec">
+				<div class="flexslider">
+			  <ul class="slides">
+				<li>
+				  <img src="img/image1.jpg" alt="b1" />
+				</li>
+				<li>
+				  <img src="img/image2.jpg" alt="b2" />
+				</li>
+				<li>
+				  <img src="img/image3.jpg" alt="b3" />
+				</li>
+				<li>
+				  <img src="img/image4.jpg" alt="b4" />
+				</li>
+			  </ul>
+</div>
+	
+	</section>
 
 <section id="Kontakt">
 	<div class="textblock">
 		<h1 class="u1">Kontakt</h1>
 		<p class="f1" id="ctypo">
 			Frigomont <br>
-			Gewerbezone Kardaun 17 <br>
+			<a class="clink" href="https://goo.gl/maps/sEeHzT5XH8E2" target="_blank">Gewerbezone Kardaun 17</a> <br>
 			39053 Kardaun (BZ)<br style="line-height: 2.5" />
 
 			<a class="clink" href="mailto:info@frigomont.it">info@frigomont.it</a> <br>
@@ -138,7 +91,6 @@
 
 			© 2018 Frigomont
 		</p>
-		<div id="map">Hier kommt die map</div>
 	</div>
 </section>
 
@@ -146,9 +98,31 @@
   <script>
   var scroll = new SmoothScroll('a[href*="#"]');
   </script>
+	
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 4500); // Change image every 2 seconds
+		}
+	</script>
+	<script>
+			$(window).load(function() {
+		  $('.flexslider').flexslider({
+			animation: "slide"
+		  });
+		});
+	</script>
 </footer>
 	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
 </body>
 </html>

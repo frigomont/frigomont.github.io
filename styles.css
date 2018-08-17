@@ -69,6 +69,20 @@ html, body{
   }
 }
 
+@media screen and (max-width: 600px) {
+	.textblock {
+		padding-left: 8%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	.textblock {
+		padding-left: 13%;
+		padding-top: 10%;
+	}
+}
+
 .de:hover {
     color:#ED1C24;
 }
@@ -81,6 +95,8 @@ html, body{
   width: 100%;
 }
 
+/* link colour*/
+
 a {
   color: #fff;
   text-decoration: none;
@@ -88,6 +104,7 @@ a {
 a:hover {
   color: #f8f8;
 }
+
 /* header */
 
 .header {
@@ -156,7 +173,7 @@ a:hover {
   top: -5px;
 }
 
-/* menu btn */
+/* menu responsive */
 
 .header .menu-btn {
   display: none;
@@ -218,14 +235,8 @@ a:hover {
 }
 #einleitung {
  	height: 100%;
-//	background: #D93033;
+/*	background: #D93033; */
 	background: #298ED9;
-}
-
-.textblock {
-	padding-left: 13%;
-	padding-top: 10%;
-	width: 500px;
 }
 
 h1 {
@@ -244,9 +255,9 @@ p {
 /*	float: left;
 	margin-left: 40px;
 	padding-top: 24px;
-	
+
 	-nebeneinander-
-*/	
+*/
 	position: relative;
 	font-size: 14pt;
 	line-height: 1.6;
@@ -270,12 +281,87 @@ p {
 .clink {
 	text-decoration: underline;
 }
+
 .clink:hover {
 	text-decoration: none;
 	color: inherit;
 }
 
-#map {
-/*	width:400px;
-	height:400px; */
+
+
+@media screen and (min-width: 601px) {
+	#images {
+		float: right;
+		position: relative;
+		width: 650px;
+		height: auto;
+		top: 65px;
+		right: 3%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#images {
+		width: 180px;
+		height: auto;
+		margin: 0 auto;
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+}
+
+
+#slidersec img{
+//	max-width:  1000px;
+	heigh: auto;
+	margin: 0 auto;
+}
+
+/*
+#images {
+    width: 650px;
+	height: 420px;
+}
+
+.mySlides {
+    width: 100%;
+    height: auto;
+}
+
+.mySlides {
+	display:none;
+	width: 100%;
+
+}
+*/
+
+#ueber {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+#uebertext {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 4%;
+  text-align: left
+}
+#uelogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+#uebody {
+  background-color: #193356;
+}
+
+#barrow {
+text-align: center;
+}
+
+#barrow a:hover {
+  color: #ED1C24;
 }
