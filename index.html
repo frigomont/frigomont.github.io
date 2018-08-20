@@ -17,6 +17,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script src="fs/jquery.flexslider.js"></script>
 	
+	<!-- Cookies -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#3937a3"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#e62576",
+      "border": "#e62576"
+    }
+  }
+})});
+</script>
+
 </head>
 <body>
   <section id="welcome">
@@ -24,7 +43,7 @@
       <img src="./logo_big.svg" alt="logo">
       </div>
 	    <span id="language">
-          <a href ="#"  class="de">DE</a> | <a href ="#" class="it">IT</a>
+          <a href ="index.html"  class="de">DE</a> | <a href ="it.html" class="it">IT</a>
         </span>
   </section>
 <header class="header">
@@ -37,13 +56,7 @@
   </ul>
 </header>
 <section id="einleitung">
-	<!--
-	<div id="imxages">
-	 <img class="mySlides" src="img/image1.jpg">
-	<img class="mySlides" src="img/image2.jpg">
-	<img class="mySlides" src="img/image3.jpg">
-	<img class="mySlides" src="img/image4.jpg"> 
-	</div>-->
+
 	<div id="images"> <img id ="berg" src="img/iceage.svg" alt="ice"> </div>
 	
 	<div class="textblock">
@@ -52,9 +65,11 @@
 			Ohne Kältetechnik ist modernes Leben undenkbar. Sowohl für den industriellen Bereich als
 			auch für den Lebensmittelgroß- und Einzelhandel gilt: Kältetechnik ist unverzichtbar. Von
 			der Konzeption bis zur Realisierung stehen wir unseren Kunden mit Ideen und Erfahrung zur
-			Seite. 
+			Seite.
 		</p>
+		<a id="jumptoimg" href="#slidersec" style="font-size: 30pt">↓</a>
 	</div>
+	
 </section>
 	<section id="slidersec">
 				<div class="flexslider">
@@ -123,6 +138,22 @@
 		});
 	</script>
 </footer>
+	
+<!-- Cookie 2
+<script type="text/javascript" id="cookieinfo"
+	src="//cookieinfoscript.com/js/cookieinfo.min.js"
+	data-bg="#363B9D"
+	data-fg="#FFFFFF"
+	data-link="#F1D600"
+	data-cookie="CookieInfoScript"
+	data-text-align="left"
+	data-message="Diese Webseite verwendet Cookies, um Ihnen ein angenehmeres Surfen zu ermöglichen."
+	data-linkmsg="Mehr Infos"
+	data-position="top"
+	data-mask-opacity="50"
+    data-close-text="OK!">
+</script>
+ -->
 	
 </body>
 </html>

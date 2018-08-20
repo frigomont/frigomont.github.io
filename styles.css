@@ -230,9 +230,10 @@ a:hover {
     color: #00CCC6;
 }
 
-#righty a:hover {
+#righty a:hover,#jumptoimg:hover {
   color: #ED1C24;
 }
+
 #einleitung {
  	height: 100%;
 /*	background: #D93033; */
