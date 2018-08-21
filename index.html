@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0;">
   <title>Frigomont - Kühlanlagen</title>
 	<link rel="stylesheet" type="text/css" href="./styles.css">
-	<script type="text/javascript" src="./scripts/scripts.js"></script>	
 	
 	<script src="./smooth-scroll.polyfills.min.js"></script>
-	<link rel="shortcut icon" type="image/png" href="favicon2.ico"/>
+	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 	
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Kein plan	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 	
 	<!-- flexslider -->
 	<link rel="stylesheet" href="fs/flexslider.css" type="text/css">
@@ -32,6 +31,11 @@ window.cookieconsent.initialise({
       "text": "#e62576",
       "border": "#e62576"
     }
+  },
+  "content": {
+    "message": "Diese Webseite verwendet Cookies, um Ihnen ein angenehmeres Surfen zu ermöglichen.",
+    "dismiss": "Passt!",
+    "link": "Mehr Infos"
   }
 })});
 </script>
@@ -57,7 +61,7 @@ window.cookieconsent.initialise({
 </header>
 <section id="einleitung">
 
-	<div id="images"> <img id ="berg" src="img/iceage.svg" alt="ice"> </div>
+	<div id="images"> <img id ="berg" src="img/iceage.svg" alt="ice"></div>
 	
 	<div class="textblock">
 		<h1 class="u1">Kältetechnik</h1>
@@ -110,26 +114,11 @@ window.cookieconsent.initialise({
 </section>
 
 <footer>
+	
   <script>
   var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 	
-	<script>
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			for (i = 0; i < x.length; i++) {
-			   x[i].style.display = "none";  
-			}
-			myIndex++;
-			if (myIndex > x.length) {myIndex = 1}    
-			x[myIndex-1].style.display = "block";  
-			setTimeout(carousel, 4500); // Change image every 2 seconds
-		}
-	</script>
 	<script>
 			$(window).load(function() {
 		  $('.flexslider').flexslider({
@@ -137,23 +126,8 @@ window.cookieconsent.initialise({
 		  });
 		});
 	</script>
-</footer>
 	
-<!-- Cookie 2
-<script type="text/javascript" id="cookieinfo"
-	src="//cookieinfoscript.com/js/cookieinfo.min.js"
-	data-bg="#363B9D"
-	data-fg="#FFFFFF"
-	data-link="#F1D600"
-	data-cookie="CookieInfoScript"
-	data-text-align="left"
-	data-message="Diese Webseite verwendet Cookies, um Ihnen ein angenehmeres Surfen zu ermöglichen."
-	data-linkmsg="Mehr Infos"
-	data-position="top"
-	data-mask-opacity="50"
-    data-close-text="OK!">
-</script>
- -->
+</footer>
 	
 </body>
 </html>

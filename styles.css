@@ -67,6 +67,9 @@ html, body{
   #language {
     font-size: 19px;
   }
+	#jumptoimg {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -81,6 +84,26 @@ html, body{
 		padding-left: 13%;
 		padding-top: 10%;
 	}
+}
+
+@media screen and (min-width: 1500px) {
+.header {
+  background-color: #0E2030;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  height: 7%;
+  font-size: 18pt;
+}
+}
+
+@media screen and (max-width: 600px) {
+.header {
+  background-color: #0E2030;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
 }
 
 .de:hover {
@@ -106,13 +129,14 @@ a:hover {
 }
 
 /* header */
-
+/*
 .header {
   background-color: #0E2030;
   position: relative;
   width: 100%;
   z-index: 3;
 }
+*/
 
 .header ul {
   margin: 0;
@@ -318,24 +342,6 @@ p {
 	margin: 0 auto;
 }
 
-/*
-#images {
-    width: 650px;
-	height: 420px;
-}
-
-.mySlides {
-    width: 100%;
-    height: auto;
-}
-
-.mySlides {
-	display:none;
-	width: 100%;
-
-}
-*/
-
 #ueber {
   padding: 0px;
   margin: 0px;
@@ -365,4 +371,42 @@ text-align: center;
 
 #barrow a:hover {
   color: #ED1C24;
+}
+
+#privacy {
+	position: absolute;
+	right: 5%;
+}
+
+#privacy a:hover {
+	color: chartreuse;
+}
+
+#barrowside {
+	position: fixed;
+	right: 4%;
+	top: 6%;
+	font-size: 25pt;
+	z-index: 1;
+}
+
+#barrowside a:hover {
+	color: #ED1C24;
+}
+
+#privacytext {
+	padding-left: 10%;
+	padding-right: 8%;
+}
+
+#privacytext li{
+	font-family: "Noto Sans Regular";
+}
+
+#privacytext h4 {
+	font-size: 19pt;
+}
+
+#benm:hover {
+	color:coral;
 }

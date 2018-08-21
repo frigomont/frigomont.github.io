@@ -5,17 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0;">
   <title>Frigomont - Impianti Frigoriferi</title>
 	<link rel="stylesheet" type="text/css" href="./styles.css">
-	<script type="text/javascript" src="./scripts/scripts.js"></script>	
 	
 	<script src="./smooth-scroll.polyfills.min.js"></script>
-	<link rel="shortcut icon" type="image/png" href="favicon2.ico"/>
-	
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 	
 	<!-- flexslider -->
 	<link rel="stylesheet" href="fs/flexslider.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script src="fs/jquery.flexslider.js"></script>
+	
+		<!-- Cookies -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#3937a3"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#e62576",
+      "border": "#e62576"
+    }
+  },
+  "content": {
+    "message": "Questo sito utilizza i cookie per migliorare la tua esperienza di navigazione.",
+    "dismiss": "Accetta",
+    "link": "Info"
+  }
+})});
+</script>
+
 	
 </head>
 <body>
@@ -95,22 +117,6 @@
   </script>
 	
 	<script>
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			for (i = 0; i < x.length; i++) {
-			   x[i].style.display = "none";  
-			}
-			myIndex++;
-			if (myIndex > x.length) {myIndex = 1}    
-			x[myIndex-1].style.display = "block";  
-			setTimeout(carousel, 4500); // Change image every 2 seconds
-		}
-	</script>
-	<script>
 			$(window).load(function() {
 		  $('.flexslider').flexslider({
 			animation: "slide"
@@ -118,6 +124,6 @@
 		});
 	</script>
 </footer>
-	
+
 </body>
 </html>
