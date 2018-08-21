@@ -67,9 +67,7 @@ html, body{
   #language {
     font-size: 19px;
   }
-	#jumptoimg {
-		display: none;
-	}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -258,10 +256,22 @@ a:hover {
   color: #ED1C24;
 }
 
-#einleitung {
- 	height: 100%;
-/*	background: #D93033; */
-	background: #298ED9;
+
+
+@media screen and (min-width: 601px) {
+	#einleitung {
+		height: 100%;
+	/*	background: #D93033; */
+		background: #298ED9;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#einleitung {
+		height: 135%;
+	/*	background: #D93033; */
+		background: #298ED9;
+	}
 }
 
 h1 {
